@@ -25,7 +25,7 @@ describe('Folders Endpoints', function() {
   );
 
   describe.only(`GET /api/folders`, () => {
-    context(`Given no articles`, () => {
+    context(`Given no folders`, () => {
       it(`responds with 200 and an empty list`, () => {
         return supertest(app)
           .get('/api/folders')
